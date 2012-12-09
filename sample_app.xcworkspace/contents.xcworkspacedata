@@ -76,6 +76,9 @@
                <FileRef
                   location = "group:home.html.erb">
                </FileRef>
+               <FileRef
+                  location = "group:about.html.erb">
+               </FileRef>
             </Group>
          </Group>
       </Group>
@@ -223,6 +226,13 @@
       <Group
          location = "group:spec"
          name = "spec">
+         <Group
+            location = "group:requests"
+            name = "requests">
+            <FileRef
+               location = "group:static_pages_spec.rb">
+            </FileRef>
+         </Group>
          <FileRef
             location = "group:spec_helper.rb">
          </FileRef>
