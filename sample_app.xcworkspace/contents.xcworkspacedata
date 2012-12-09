@@ -38,6 +38,9 @@
             <FileRef
                location = "group:application_controller.rb">
             </FileRef>
+            <FileRef
+               location = "group:static_pages_controller.rb">
+            </FileRef>
          </Group>
          <Group
             location = "group:helpers"
@@ -62,6 +65,19 @@
                name = "layouts">
                <FileRef
                   location = "group:application.html.erb">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:static_pages"
+               name = "static_pages">
+               <FileRef
+                  location = "group:help.html.erb">
+               </FileRef>
+               <FileRef
+                  location = "group:home.html.erb">
+               </FileRef>
+               <FileRef
+                  location = "group:about.html.erb">
                </FileRef>
             </Group>
          </Group>
@@ -210,6 +226,13 @@
       <Group
          location = "group:spec"
          name = "spec">
+         <Group
+            location = "group:requests"
+            name = "requests">
+            <FileRef
+               location = "group:static_pages_spec.rb">
+            </FileRef>
+         </Group>
          <FileRef
             location = "group:spec_helper.rb">
          </FileRef>
